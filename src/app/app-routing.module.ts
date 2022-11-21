@@ -5,6 +5,10 @@ import {NgModule} from "@angular/core";
 const routes: Routes = [
   { path: 'stagiaire', component: StagiaireComponent },
 { path: 'adresse', component: AdresseComponent },
+  { path: 'stagiaire', component: StagiaireComponent },
+{ path: 'stagiaire/:nom/:prenom', component: StagiaireComponent },
+{ path: 'adresse', component: AdresseComponent },
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, { enableTracing: true }) ],
